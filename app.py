@@ -19,7 +19,7 @@ def load_video_background(path):
 # 1. PAGE CONFIG
 st.set_page_config(page_title="Deepfake Shield", layout="centered")
 
-# 2. SMART VIDEO LOADER (Catches hidden .mp4.mp4 errors)
+# 2. SMART VIDEO LOADER 
 @st.cache_resource
 def get_video_base64(bin_file):
     # Check for 'background.mp4' AND 'background.mp4.mp4'
